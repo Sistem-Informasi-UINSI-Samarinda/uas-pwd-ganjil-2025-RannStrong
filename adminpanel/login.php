@@ -12,7 +12,7 @@ if(isset($_SESSION['login'])) { header('location: index.php'); } // Jika sudah l
 </head>
 <body style="background: #1a1a1a;">
     <div style="width: 350px; margin: 100px auto; background: white; padding: 30px; border-radius: 10px;">
-        <h2 style="text-align: center; color: #DA291C;">Admin Masciter Utd</h2>
+        <h2 style="text-align: center; color: #DA291C;">Admin Manchester Utd</h2>
         <form action="" method="post">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>

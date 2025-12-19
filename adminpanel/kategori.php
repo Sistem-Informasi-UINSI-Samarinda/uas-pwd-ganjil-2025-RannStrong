@@ -13,7 +13,7 @@ $queryKategori = mysqli_query($conn, "SELECT * FROM kategori");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kategori | Masciter United</title>
+    <title>Kategori | Manchester United</title>
     <link rel="stylesheet" href="../css/style2.css">
 </head>
 <body>
