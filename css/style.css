@@ -1,0 +1,157 @@
+:root {
+    --mu-red: #DA291C;
+    --mu-black: #0e0e0e;
+    --mu-dark: #000000;
+    --mu-white: #ffffff;
+    --mu-gold: #FBE122;
+}
+
+body {
+    background-color: var(--mu-black);
+    color: var(--mu-white);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--mu-dark);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 3px solid var(--mu-red);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: var(--mu-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover { color: var(--mu-red); }
+
+/* BANNER & SEARCH */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../image/banner1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-container { 
+    margin-top: 25px; 
+    width: 90%; 
+    max-width: 500px; 
+    display: flex; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input { flex: 1; padding: 12px; border: none; outline: none; }
+.btn-search { padding: 12px 25px; background: var(--mu-red); color: white; border: none; cursor: pointer; font-weight: bold; }
+
+/* GRID PRODUK (3 KOLOM) */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.game-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.game-card img { width: 100%; height: 350px; object-fit: cover; }
+.card-content { padding: 20px; text-align: center; }
+.game-price { color: var(--mu-gold); font-weight: bold; font-size: 1.2rem; margin-bottom: 15px; }
+
+/* FORM PEMBAYARAN (PERBAIKAN UTAMA) */
+.payment-box {
+    background: #1a1a1a;
+    padding: 30px;
+    border: 1px solid var(--mu-red);
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.payment-box h2 { color: var(--mu-red); margin-top: 0; }
+
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: #ccc; }
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box; /* Agar padding tidak merusak lebar */
+}
+
+.btn-buy {
+    background: var(--mu-red);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* TABLE RIWAYAT (PERBAIKAN) */
+.table-container { overflow-x: auto; margin-top: 20px; }
+.table-history {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+}
+
+.table-history th {
+    background: var(--mu-red);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.table-history td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+}
+
+/* TENTANG KAMI */
+.about-section {
+    background: var(--mu-dark);
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+}

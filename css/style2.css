@@ -1,0 +1,31 @@
+:root {
+    --mu-red: #DA291C;
+    --mu-black: #1a1a1a;
+    --mu-white: #ffffff;
+}
+
+body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; }
+
+/* Navbar */
+nav { background: var(--mu-red); color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; text-decoration: none; margin-left: 15px; font-weight: bold; }
+nav a:hover { color: #ffeb3b; }
+
+/* Dashboard Cards */
+.container { padding: 20px 5%; }
+.row { display: flex; gap: 20px; margin-top: 20px; }
+.card { background: white; padding: 20px; flex: 1; border-radius: 8px; border-left: 5px solid var(--mu-red); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Forms */
+input[type="text"], input[type="password"], input[type="number"], select, textarea {
+    width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;
+}
+.btn { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; color: white; font-weight: bold; text-decoration: none; display: inline-block; }
+.btn-primary { background: var(--mu-red); }
+.btn-info { background: #17a2b8; }
+.btn-danger { background: #dc3545; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; background: white; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background: #eee; }
